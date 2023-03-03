@@ -2,7 +2,26 @@
     margin: 0;
     padding: 0;
 }
-.container-navbar{
-    background: red;
-    color:#000
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+
+}
+.container-nav{
+    display: flex;
+}
+.web-name{
+    opacity: 0;
+    position: absolute;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(3, 1, 18);
+}
+.logo{
+    width: 150px;
+    height: 75px;
+    background-color: aqua;
 }
