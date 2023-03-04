@@ -1,70 +1,48 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Transparent Login Form HTML CSS</title>
-    <link rel="stylesheet" href="login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="bg-img">
-      <div class="content">
-        <header>Login Form</header>
-        <form action="#">
-          <div class="field">
-            <span class="fa fa-user"></span>
-            <input type="text" required placeholder="Email or Phone" />
-          </div>
-          <div class="field space">
-            <span class="fa fa-lock"></span>
-            <input
-              type="password"
-              class="pass-key"
-              required
-              placeholder="Password"
-            />
-            <span class="show">SHOW</span>
-          </div>
-          <div class="pass">
-            <a href="#">Forgot Password?</a>
-          </div>
-          <div class="field">
-            <input type="submit" value="LOGIN" />
-          </div>
-        </form>
-        <div class="login">Or login with</div>
-        <div class="links">
-          <div class="facebook">
-            <i class="fab fa-facebook-f"><span>Facebook</span></i>
-          </div>
-          <div class="instagram">
-            <i class="fab fa-instagram"><span>Instagram</span></i>
-          </div>
-        </div>
-        <div class="signup">
-          Don't have account?
-          <a href="#">Signup Now</a>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="form">
+    <form>
+      <h2>Login Form</h2>
+      <div class="input">
+        <!-- <ion-icon></ion-icon> -->
+        <input type="email" placeholder="Email" required><br>
+        <!-- <ion-icon></ion-icon> -->
+        <input type="password" placeholder="password" required>
       </div>
-    </div>
-    <script>
-      const pass_field = document.querySelector(".pass-key");
-      const showBtn = document.querySelector(".show");
-      showBtn.addEventListener("click", function () {
-        if (pass_field.type === "password") {
-          pass_field.type = "text";
-          showBtn.textContent = "HIDE";
-          showBtn.style.color = "#3498db";
-        } else {
-          pass_field.type = "password";
-          showBtn.textContent = "SHOW";
-          showBtn.style.color = "#222";
-        }
-      });
-    </script>
-  </body>
+      <div class="forgot-pass"></a><a href="#">Forgot Password</a></div>
+      <div class="login-btn">
+        <button><a href="#">LOGIN</a></button>
+      </div>
+      <div class="create-ac"><span>You don't have Account ?</span><a href="#">Create Account</a></div>
+      <div class="login-another-account">
+        <span>or login with</span>
+      </div>
+      <div class="login-icons">
+            <div class="google">
+              <i><ion-icon name="logo-google"></ion-icon></i>
+            </div>
+            <div class="facebook">
+              <i><ion-icon name="logo-facebook"></ion-icon></i>
+            </div>
+            <div class="instagram">
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+            </div>
+            <div class="git">
+              <i><ion-icon name="logo-github"></ion-icon></i>
+            </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
